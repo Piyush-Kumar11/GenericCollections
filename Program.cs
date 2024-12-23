@@ -11,13 +11,14 @@ namespace GenericCollections
         static void Main(string[] args)
         {
             //ListD.ListDemo();
-            //DictionaryD.DictionaryDemo();
-            SortedListD.SortedListDemo();
+            DictionaryD.DictionaryDemo();
+            //SortedListD.SortedListDemo();
             //StackD.StackDemo();
             //QueueD.QueueDemo();
             //LinkedListD.LinkedListDemo();
             //HashSetD.HashSetDemo();
             //SortedSetD.SortedSetDemo();
+            //TraversalWithEnumerator.ListDemo();
 
         }
     }

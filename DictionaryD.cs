@@ -17,10 +17,17 @@ namespace GenericCollections
             di.Add(1, "null");
             di.Add(4, "Laptop");
 
-            foreach(KeyValuePair<int,string> k in di)
+            IEnumerator<KeyValuePair<int,string>> e = di.GetEnumerator();
+            while (e.MoveNext())
             {
-                Console.WriteLine(k.Key + " " + k.Value);
+                KeyValuePair<int, string> k = e.Current;
+                Console.WriteLine(k.Key+" "+k.Value);
             }
+
+            //foreach(KeyValuePair<int,string> k in di)
+            //{
+            //    Console.WriteLine(k.Key + " " + k.Value);
+            //}
 
         }
     }
